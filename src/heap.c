@@ -24,6 +24,8 @@
 #include "../portable/MemMang/heap_4.c"
 #elif (configMEMMANG_HEAP_NB == 5)
 #include "../portable/MemMang/heap_5.c"
+#elif (configMEMMANG_HEAP_NB == -1)
+#include "../portable/MemMang/heap_newlib.c"
 #else
 #error "Wrong Memory allocation implementations defined"
 #endif
