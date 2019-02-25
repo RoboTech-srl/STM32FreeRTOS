@@ -8,4 +8,6 @@
 
 #include "FreeRTOS/Source/include/task.h"
 
+PRIVILEGED_FUNCTION void vTaskSwitchContext( void ) __attribute__((used));
+
 #endif //_ARDUINO_TASK_H_
